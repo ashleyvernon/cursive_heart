@@ -210,8 +210,12 @@ def not_found(exc):
 	return Response('<h3>Not found</h3>'), 404
 
 def main():
+	port =int(os.environ.get('PORT', 5001))
+	print "PORTPORTPORT", port
 	database.create_tables([Entry, FTSEntry], safe=True)
-	app.run(debug=True)
+	app.run(debug=True,port=port)
+
+
 
 if __name__ == '__main__':
 	main()
