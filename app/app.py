@@ -15,7 +15,19 @@ from peewee import *
 from playhouse.flask_utils import FlaskDB, get_object_or_404, object_list
 from playhouse.sqlite_ext import *
 
+
+# logging helper
+def p(*args):
+	if (args is None) or (args[0] is None):
+		print None
+	else:
+		print args[0] % (len(args) > 1 and args[1:] or [])
+	sys.stdout.flush()
+
+
 ADMIN_PASSWORD = os.environ.get('password')
+p("ADMIN PASSWORD")
+p(ADMIN_PASSWORD)
 APP_DIR = os.path.dirname(os.path.realpath(__file__))
 DATABASE = 'sqliteext:///%s' % os.path.join(APP_DIR, 'blog.db')
 DEBUG = False
@@ -215,6 +227,7 @@ def main():
 
 
 
+
+
 if __name__ == '__main__':
 	main()
-
