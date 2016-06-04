@@ -4,7 +4,6 @@ import os
 import re
 import urllib
 
-
 from flask import (Flask, abort, flash, Markup, redirect, render_template,
                    request, Response, session, url_for)
 from markdown import markdown
@@ -210,8 +209,7 @@ def not_found(exc):
 	return Response('<h3>Not found</h3>'), 404
 
 def main():
-	port =int(os.environ.get('PORT', 5001))
-	print "PORTPORTPORT", port
+	port = int(os.environ.get('PORT', 5000))
 	database.create_tables([Entry, FTSEntry], safe=True)
 	app.run(debug=True,port=port)
 
