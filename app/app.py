@@ -211,7 +211,7 @@ def not_found(exc):
 def main():
 	port = int(os.environ.get('PORT', 5000))
 	database.create_tables([Entry, FTSEntry], safe=True)
-	app.run(debug=False,port=port)
+	app.run(debug=False,host='0.0.0.0',port=port)
 
 
 
