@@ -26,6 +26,9 @@
           </button>
           <a class="navbar-brand" href="{{ url_for('index') }}">Ashley's Blog</a>
         </div>
+        <!-- </div>
+          <img class="spotlight" alt="" aria-describedby="fbPhotosSnowliftCaption" aria-busy="false" class="_2-sx" style="width: 340px; height: 200px;" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/1557453_10154197821297122_2221383188847073454_n.jpg?oh=b8f77382e693c70e39b46331f18d193c&amp;oe=580F905B">
+        </div> -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% if session.logged_in %}
@@ -55,6 +58,9 @@
       {% endfor %}
 
       {% block page_header %}
+      <div> 
+        <img class="irc_mut izh2826gqGyg-HwpH6ZlgJaI" alt="" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqdpx7DaZa2dzxVbufPkx9oLS7bDDdTdtOzCdpc2TTU3L9NIT1" width="340" height="200" style="margin-top: 54px;">
+      <div>
         <div class="page-header">
           <h1>{% block content_title %}{% endblock %}</h1>
         </div>
