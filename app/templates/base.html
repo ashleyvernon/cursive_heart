@@ -14,7 +14,9 @@
     {% block extra_scripts %}{% endblock %}
   </head>
 
-  <body>
+
+  <body { background="http://www.beautytour.info/wp-content/uploads/2016/01/raja-ampat-Best-Wallpaper.jpg" }
+  >
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -26,6 +28,10 @@
           </button>
           <a class="navbar-brand" href="{{ url_for('index') }}">Ashley's Blog</a>
         </div>
+            <source src="https://d3k5xyayaartr5.cloudfront.net/sunrise-water-birds/sunrise-water-birds.mp4" type="video/mp4">
+            <source src="https://d3k5xyayaartr5.cloudfront.net/sunrise-water-birds/sunrise-water-birds.webm" type="video/webm">
+            <source src="https://d3k5xyayaartr5.cloudfront.net/sunrise-water-birds/sunrise-water-birds.ogv" type="video/ogg">
+          </video>
         <!-- </div>
           <img class="spotlight" alt="" aria-describedby="fbPhotosSnowliftCaption" aria-busy="false" class="_2-sx" style="width: 340px; height: 200px;" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/1557453_10154197821297122_2221383188847073454_n.jpg?oh=b8f77382e693c70e39b46331f18d193c&amp;oe=580F905B">
         </div> -->
@@ -59,7 +65,8 @@
 
       {% block page_header %}
       <div> 
-        <img class="irc_mut izh2826gqGyg-HwpH6ZlgJaI" alt="" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqdpx7DaZa2dzxVbufPkx9oLS7bDDdTdtOzCdpc2TTU3L9NIT1" width="340" height="200" style="margin-top: 54px;">
+      <!--  <img class="irc_mut izh2826gqGyg-HwpH6ZlgJaI" alt="" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqdpx7DaZa2dzxVbufPkx9oLS7bDDdTdtOzCdpc2TTU3L9NIT1" width="340" height="200" style="margin-top: 23px;">
+        <img style="-webkit-user-select: none; cursor: zoom-in;" src="http://dennystrecker.com/wp-content/uploads/Famous-Habits-Quotes-with-Images-%E2%80%93-Turning-Bad-Habits-into-God-Habits-%E2%80%93-Change-your-Bad-Habit-We-are-what-we-repeatedly-do.-Excellence-then-is-not-an-act-but-a-habit.-Aristotle.jpg" width="210" height="210" align="right"> -->
       <div>
         <div class="page-header">
           <h1>{% block content_title %}{% endblock %}</h1>
@@ -70,7 +77,7 @@
 
       <footer>
         <hr />
-        <p>Blog, &copy; 2016</p>
+        <p>Cursive Heart, &copy; 2016</p>
       </footer>
     </div>
   </body>
