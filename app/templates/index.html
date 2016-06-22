@@ -9,13 +9,17 @@
     {% if search %}
       {% set entry = entry.entry %}
     {% endif %}
+  <div class="html_context">
     <h3>
       <a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">
         {{ entry.title }}
       </a>
     </h3>
-    <p>{{ entry.timestamp.strftime('%m/%d/%Y') }}</p>
-    <p> {{ entry.html_content }} </p>
+  </div>
+    <!-- <p>{{ entry.timestamp.strftime('%m/%d/%Y') }}</p> -->
+    <div class="html_content">
+      <p> {{ entry.html_content }} </p>
+    </div>
   {% endfor %}
   {% include "includes/pagination.html" %}
 {% endblock %}

@@ -1,4 +1,26 @@
 body {
-	background: url("https://pixabay.com/static/uploads/photo/2016/05/29/15/49/dandelion-1423174_960_720.jpg") repeat fixed center 
-;	
+	background: repeat fixed center;
+	background-size: cover;	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://pixabay.com/static/uploads/photo/2016/05/29/15/49/dandelion-1423174_960_720.jpg);
+}
+
+.html_content img {
+	max-width: 500px;
+	margin: 0px auto;
+}
+
+.html_content {
+	color: white;
+}
+
+.navbar-brand {
+	font-family: fantasy;
+}
+
+.form-group {
+	color: aqua
+}
+
+.navbar-collapse {
+	color: paleturquoise;
 }
